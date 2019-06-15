@@ -10,7 +10,7 @@ user_id = input("Enter subnet id: ")
 user_bcast = input("Enter broadcast address: ")
 user_plength = input("Enter prefix length: ")
 user_nhosts = subnet.num_addresses - 2
-if (subnet.prefixlen < 17):
+if (subnet.prefixlen > 15):
     user_nhosts = input("Enter tne number of usable addresses in the subnet: ")
 
 flag_id = user_id == str(subnet.network_address)
